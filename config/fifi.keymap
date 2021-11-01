@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE    0
-#define MEDIA   1
-#define NAV     2
-#define MOUSE   3
-#define SYM     4
-#define NUM     5
-#define FUN     6
+#define MEDIA   6
+#define NAV     1
+#define MOUSE   2
+#define SYM     5
+#define NUM     3
+#define FUN     4
 
 / {
 	behaviors {
@@ -41,18 +41,9 @@
             >;
         };
 
-        media_layer {
-            bindings = <
-   &bootloader &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &trans     &kp C_STOP     &kp C_VOLUME_UP            &kp C_PREV          &trans
-   &kp LGUI    &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans     &kp C_PP &kp C_VOLUME_DOWN &kp C_NEXT &trans
-   &reset      &out OUT_USB &out OUT_BLE &out OUT_TOG &trans       &trans     &trans     &kp C_MUTE            &trans          &trans
-                            &trans       &trans       &trans       &trans &trans   &trans
-            >;
-        };
-
         nav_layer {
             bindings = <
-   &bootloader &kp END &kp UP &kp HOME  &kp CAPS   &kp PSCRN &kp HOME &kp UP &kp END &kp DEL
+    &bootloader &kp END &kp UP &kp HOME  &kp CAPS   &kp PSCRN &kp HOME &kp UP &kp END &kp DEL
    &kp PG_DN    &kp LEFT     &kp DOWN    &kp RIGHT    &kp PG_UP       &kp PG_UP   &kp LEFT    &kp DOWN   &kp RIGHT    &kp PG_DN
    &reset      &bt BT_SEL 2       &bt BT_SEL 1       &bt BT_SEL 0       &bt BT_CLR       &kp K_UNDO    &kp K_PASTE    &kp K_COPY  &kp K_CUT &kp K_REDO
                             &trans       &trans       &trans       &trans    &trans    &trans
@@ -65,15 +56,6 @@
    &kp LGUI    &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans &trans &trans &trans &trans
    &reset      &trans       &trans       &trans       &trans       &trans &trans &trans &trans &reset
                             &trans       &trans       &trans       &trans &trans &trans
-            >;
-        };
-
-        sym_layer {
-            bindings = <
-   &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader
-   &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS    &trans     &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
-   &kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE    &trans     &trans       &trans       &trans       &reset
-                      &kp LPAR  &kp RPAR  &kp UNDER   &trans     &trans       &trans
             >;
         };
 
@@ -92,6 +74,24 @@
    &kp F11 &kp F4 &kp F5    &kp F6    &kp SLCK          &trans     &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
    &kp F10 &kp F1 &kp F2    &kp F3    &kp PAUSE_BREAK   &trans     &trans       &trans       &trans       &reset
                   &kp K_APP &kp SPACE &kp TAB           &trans     &trans       &trans
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+   &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader
+   &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS    &trans     &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
+   &kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE    &trans     &trans       &trans       &trans       &reset
+                      &kp LPAR  &kp RPAR  &kp UNDER   &trans     &trans       &trans
+            >;
+        };
+
+        media_layer {
+            bindings = <
+   &bootloader &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR   &trans     &kp C_STOP     &kp C_VOLUME_UP            &kp C_PREV          &trans
+   &kp LGUI    &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans     &kp C_PP &kp C_VOLUME_DOWN &kp C_NEXT &trans
+   &reset      &out OUT_USB &out OUT_BLE &out OUT_TOG &trans       &trans     &trans     &kp C_MUTE            &trans          &trans
+                            &trans       &trans       &trans       &trans &trans   &trans
             >;
         };
     };
