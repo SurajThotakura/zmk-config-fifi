@@ -79,10 +79,10 @@
 
         num_layer {
             bindings = <
-   &kp LBKT  &kp N7 &kp N8  &kp N9 &kp RBKT    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader
-   &kp SEMI  &kp N4 &kp N5  &kp N6 &kp EQUAL   &trans     &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
-   &kp GRAVE &kp N1 &kp N2  &kp N3 &kp BSLH    &trans     &trans       &trans       &trans       &reset
-                    &kp DOT &kp N0 &kp MINUS   &trans     &trans       &trans
+   &kp EXCL  &kp AT &kp POUND  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
+   &hm LGUI N1  &hm LALT N2 &hm LCTRL N3  &hm LSHFT N4 &kp N5   &kp N6     &hm LSHFT N7    &hm LCTRL N8   &hm LALT N9    &hm LGUI N0
+   &kp GRAVE &kp SEMI &kp EQUAL  &kp PLUS &kp BSLH    &kp PIPE     &kp MINUS       &kp UNDER       &kp FSLH       &kp TILDE
+                    &kp LBKT &kp RBKT &kp MINUS   &trans     &trans       &trans
             >;
         };
 
