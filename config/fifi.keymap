@@ -37,7 +37,7 @@
    &kp SQT      &kp COMMA       &kp DOT         &kp P         &kp Y             &kp F       &kp G       &kp C       &kp R         &kp L
    &kp A        &hm LALT O      &hm LCTRL E     &hm LSHFT U   &hm LGUI I        &hm LGUI D  &hm LSHFT H &hm LCTRL T &hm LALT N    &kp S
    &kp SEMI     &hm RALT Q      &kp J           &kp K         &kp X             &kp B       &kp M       &kp W       &hm RALT V    &kp Z
-                          &lt FUN TAB &lt SYM SPACE &kp BSPC   &kp LSHIFT &lt NUM RET &lt NAV ESC
+                          &lt FUN TAB &lt SYM BSPC &kp RET   &kp LSHIFT &lt NUM SPACE &lt NAV ESC
             >;
         };
 
@@ -46,7 +46,7 @@
    &kp Q   &kp W  &kp E     &kp R     &kp T             &kp Y      &kp U        &kp I        &kp O        &kp P
    &kp A   &hm LALT S   &hm LCTRL D     &hm LSHFT F     &hm LGUI G             &hm LGUI H      &hm LSHFT J        &hm LCTRL K        &hm LALT L        &kp SEMI
    &kp Z   &hm RALT X  &kp C     &kp V     &kp B             &kp N      &kp M        &kp COMMA        &hm RALT DOT        &kp FSLH
-                          &lt FUN TAB &lt SYM SPACE &kp BSPC   &kp LSHIFT &lt NUM RET &lt NAV ESC
+                          &lt FUN TAB &lt SYM BSPC &kp RET   &kp LSHIFT &lt NUM SPACE &lt NAV ESC
             >;
         };
 
@@ -62,7 +62,7 @@
         sym_layer {
             bindings = <
    &kp SEMI  &kp SQT  &kp LPAR  &kp RPAR  &kp PLUS    &trans     &trans       &trans       &trans       &trans
-   &kp COLON &kp FSLH &kp LBRC  &kp RBRC  &kp MINUS   &trans     &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
+   &kp COLON &kp FSLH &kp LBKT  &kp RBKT  &kp MINUS   &trans     &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
    &kp TILDE &kp EXCL &kp HASH  &kp EQUAL &kp PIPE    &trans     &trans       &trans       &trans       &trans
                       &trans    &trans    &trans      &trans     &trans       &trans
             >;
